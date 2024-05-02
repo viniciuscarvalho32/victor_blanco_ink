@@ -1,0 +1,138 @@
+/* Reset CSS */
+@media (prefers-reduced-motion: no-preference) {
+    html {
+        scroll-behavior: smooth;
+      }
+    }
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+  }
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+  
+  header {
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    background-color: #070707;
+    color: #fff;
+    padding: 20px 5px 10px 0;
+    width: 100%;
+  }
+  header h1 {
+    font-size: 2rem;
+  }
+  
+  nav ul {
+    display: flex;
+    list-style-type: none;
+    padding: 20px;
+  }
+  
+  nav ul li {
+    display: inline;
+    padding: 5px;
+  }
+  
+  nav ul li a {
+    color: #fff;
+    text-decoration: none;
+  }
+  .igimg img {
+    width: 4rem;
+  }
+  #contact {
+    background-color: rgb(167, 192, 144);
+  }
+  .whatsappicon img {
+    float: right;
+    position: fixed;
+    width: 50px;
+    margin-left: 10px; 
+    margin-top: 500px;
+  }
+  footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+  }
+  .fotos img {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: auto;
+    flex-wrap: wrap;
+    margin-top: 10px;
+  }
+  #img:hover {
+    background-color: beige;
+    box-shadow: 1px 1px 13px 4px rgba(215, 215, 215, 0.639);
+    transition: .4s;
+    opacity: 1;
+  }
+  #apresentacao {
+
+  }
+  #apresentacao img {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+  #orcamento {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    background-color: grey;
+    color: #fff;
+    margin: 10px 0 10px 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding:  10px 0 10px 0;
+  }
+  #orcamento h3 {
+    padding: 10px;
+    margin-left: 10px;
+  }
+  #orcamento p {
+    padding: 10px;
+    margin-left: 10px;
+  }
+  .btnagenda {
+    background-color: rgb(169, 169, 169);
+    padding: 10px;
+    width: 150px;
+    margin-left: 20px;
+    margin-top: 20px;
+  }
+  .btnagenda a {
+    display: flex;
+    justify-content: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #fff;
+    list-style: none;
+    text-decoration: none;
+}
+#sobre {
+    margin-top: 10px;
+    background-color: #e6e6e6;
+    padding: 10px;
+    color: #6a6262;
+}
+#adress {
+    margin-top: 10px;
+    background-color: #070707;
+    color: #fff;
+    padding: 10px;
+}
+
+
+  
