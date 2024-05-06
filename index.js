@@ -9,3 +9,6 @@ var prevScrollpos = window.scrollY;
       }
       prevScrollpos = currentScrollPos;
     }
+addEventListener('resize', () => {
+  
+})
