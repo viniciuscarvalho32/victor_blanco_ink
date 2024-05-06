@@ -8,4 +8,9 @@ var prevScrollpos = window.scrollY;
         document.getElementById("nav-bar").classList.add("hidden");
       }
       prevScrollpos = currentScrollPos;
+
+    }
+addEventListener('resize', () => {
+})
     } /*teste*/
+
