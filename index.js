@@ -10,7 +10,39 @@ var prevScrollpos = window.scrollY;
       prevScrollpos = currentScrollPos;
 
     }
-addEventListener('resize', () => {
-})
-    } /*teste*/
+    var tamanhoTela = window.innerWidth;
+    // console.log(tamanhoTela)
+    if (tamanhoTela < 768) {
+        var eleSobreDesk = document.querySelector('.sobre-desk')
+         if (eleSobreDesk) {
+            eleSobreDesk.className = 'sobre-desk-hidden';
+         }
+    }
+    window.addEventListener('resize', function (item) {
+      var largura = item.target.innerWidth;
+      // console.log(largura)
+      if (largura > 768) {
+        //Desktop
+        var eleSobreMob = document.querySelector('.sobre-mob')
+        if (eleSobreMob) {
+          eleSobreMob.className = 'sobre-mob-hidden';
+        }
+        var eleSobreDeskHidd = document.querySelector('.sobre-desk-hidden')
+        if (eleSobreDeskHidd) {
+          eleSobreDeskHidd.className = 'sobre-desk';
+        }
+      } else {
+        //Mobile
+        var eleSobreMobHidd = document.querySelector('.sobre-mob-hidden')
+        if (eleSobreMobHidd) {
+          eleSobreMobHidd.className = 'sobre-mob';
+        }
+        var eleSobreDesk = document.querySelector('.sobre-desk')
+        if (eleSobreDesk) {
+          eleSobreDesk.className = 'sobre-desk-hidden';
+        }
+      }  
+  });
+
+
 

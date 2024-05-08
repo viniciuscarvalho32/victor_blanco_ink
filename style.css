@@ -152,15 +152,15 @@
     text-decoration: none;
     font-weight: bolder;
   }
-  #sobre {
+  .sobre-mob {
     margin-top: 10px;
-    background-color: #e6e5e5;
+    background-color: #8d8d8d;
     padding: 15px;
-    color: #070707;
+    color: #f8f5f5;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
   }
-  #sobre p {
-    
+  .sobre-desk-hidden {
+    display: none; 
   }
   #adress {
     margin-top: 10px;
@@ -357,12 +357,14 @@ footer {
   transform: scale(1.5); 
 }
 #apresentacao {
-  background-color: #070707;
+  display: flex;
+  justify-content:space-evenly;
+  background-color: #080808;
 }
 #apresentacao img {
   margin: 0 auto;
   margin-top: 50px;
-  width: 50%;
+  width: 100%;
 }
 #orcamento {
   display: flex;
@@ -398,12 +400,16 @@ footer {
   text-decoration: none;
   font-weight: bolder;
 }
-#sobre {
-  margin-top: 10px;
-  background-color: #e6e5e5;
-  padding: 15px;
-  color: #070707;
+.sobre-desk {
+  margin-top: 100px;
+  background-color: #0e0e0e;
+  padding: 25px;
+  color: #f8f5f5;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
+  width: 50%;
+}
+.sobre-mob-hidden {
+  display: none;
 }
 #adress {
   display: flex; 
