@@ -8,6 +8,7 @@ var prevScrollpos = window.scrollY;
         document.getElementById("nav-bar").classList.add("hidden");
       }
       prevScrollpos = currentScrollPos;
+
     }
     var tamanhoTela = window.innerWidth;
     // console.log(tamanhoTela)
@@ -16,8 +17,6 @@ var prevScrollpos = window.scrollY;
          if (eleSobreDesk) {
             eleSobreDesk.className = 'sobre-desk-hidden';
          }
-    } else {
-
     }
     window.addEventListener('resize', function (item) {
       var largura = item.target.innerWidth;
@@ -44,3 +43,6 @@ var prevScrollpos = window.scrollY;
         }
       }  
   });
+
+
+
