@@ -9,21 +9,38 @@ var prevScrollpos = window.scrollY;
       }
       prevScrollpos = currentScrollPos;
     }
-    window.addEventListener('resize', function () {
-      //var altura = window.innerHeight;
-      var largura = window.innerWidth;
-     
+    var tamanhoTela = window.innerWidth;
+    // console.log(tamanhoTela)
+    if (tamanhoTela < 768) {
+        var eleSobreDesk = document.querySelector('.sobre-desk')
+         if (eleSobreDesk) {
+            eleSobreDesk.className = 'sobre-desk-hidden';
+         }
+    } else {
+
+    }
+    window.addEventListener('resize', function (item) {
+      var largura = item.target.innerWidth;
+      // console.log(largura)
       if (largura > 768) {
         //Desktop
         var eleSobreMob = document.querySelector('.sobre-mob')
-        eleSobreMob.className = 'sobre-mob-hidden';
-        var eleSobreDesk = document.querySelector('.sobre-desk-hidden')
-        eleSobreDesk.className = 'sobre-desk';
+        if (eleSobreMob) {
+          eleSobreMob.className = 'sobre-mob-hidden';
+        }
+        var eleSobreDeskHidd = document.querySelector('.sobre-desk-hidden')
+        if (eleSobreDeskHidd) {
+          eleSobreDeskHidd.className = 'sobre-desk';
+        }
       } else {
         //Mobile
-        var eleSobreMob = document.querySelector('.sobre-mob-hidden')
-        eleSobreMob.className = 'sobre-mob';
+        var eleSobreMobHidd = document.querySelector('.sobre-mob-hidden')
+        if (eleSobreMobHidd) {
+          eleSobreMobHidd.className = 'sobre-mob';
+        }
         var eleSobreDesk = document.querySelector('.sobre-desk')
-        eleSobreDesk.className = 'sobre-desk-hidden';
+        if (eleSobreDesk) {
+          eleSobreDesk.className = 'sobre-desk-hidden';
+        }
       }  
   });
